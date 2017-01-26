@@ -1,0 +1,18 @@
+Function Description
+
+TX : Transmit
+
+RX : Receive. Always use a level converter for incoming data. This device is not 5V tolerant.
+
+CH_PD : Chip enable. Should be high for normal operation.
+• 0 – Disabled
+• 1 – Enabled
+
+RST : External reset.
+• 0 – Reset
+• 1 – Normal
+
+GPIO 0 : Should be high on boot, low for flash update.
+GPIO 2 : Should be high on boot.
+VCC : 3.3V
+GND : Ground
