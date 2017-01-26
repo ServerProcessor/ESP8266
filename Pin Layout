@@ -13,6 +13,9 @@ RST : External reset.
 • 1 – Normal
 
 GPIO 0 : Should be high on boot, low for flash update.
+
 GPIO 2 : Should be high on boot.
+
 VCC : 3.3V
+
 GND : Ground
