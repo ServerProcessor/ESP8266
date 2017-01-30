@@ -1,0 +1,12 @@
+1- ESP8266EX offers a complete and self-contained WiFi networking solution.
+2- When ESP8266EX hosts the application, it boots up directly from an external flash.
+3- It has integrated cache to  improve the performance of the system in such applications.
+4- It integrates the antenna switches, RF balun, power amplifier, low noise receive amplifier,filters, power management modules, it
+requires minimal external circuitry, and the entire solution, including front-end module, is designed to occupy minimal PCB area.
+5- ESP8266EX also integrates an enhanced version of Tensilica’s L106 Diamond series 32bit processorwith on-chip SRAM, besides the
+WiFi functionalities. 
+6- Integrated 10-bit ADC.
+7- Integrated low power 32-bit MCU.
+8- Integrated TCP/IP protocol stack.
+9- 2.4GHz.
+10- Network Protocols : IPv4, TCP/UDP/HTTP/FTP.
