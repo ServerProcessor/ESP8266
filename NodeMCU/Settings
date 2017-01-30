@@ -1,0 +1,4 @@
+NodeMCU-12E
+CPUfreq = 80MHz
+Flash Size = 4M ( SPIFFS )
+Baud Rate = 921600
