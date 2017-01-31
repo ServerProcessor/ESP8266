@@ -12,3 +12,4 @@ WiFi functionalities.
 10- Network Protocols : IPv4, TCP/UDP/HTTP/FTP.
 11- Flash Quad IO uses 4 lines for data for up to 4 times the speed of standard and Flash Dual IO uses 2 lines for data.
 12- 3.3V output pins.
+13- AMS117 as a voltage regulator and CH430 as a USB to Serial converter.
