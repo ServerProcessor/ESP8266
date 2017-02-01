@@ -13,3 +13,9 @@ WiFi functionalities.
 11- Flash Quad IO uses 4 lines for data for up to 4 times the speed of standard and Flash Dual IO uses 2 lines for data.
 12- 3.3V output pins.
 13- AMS117 as a voltage regulator and CH430 as a USB to Serial converter.
+14- GPIO 0/2/16 are used during the boot process.
+15- Wi-Fi connectivity is lost during deep sleep and we have to connect to Wi-Fi after deep sleep and reset wakes up the processing
+unit.
+16- ESP32 has built-in encryption module for cryptographic hardware acceleration. SHA,RSA,AES.
+
+
