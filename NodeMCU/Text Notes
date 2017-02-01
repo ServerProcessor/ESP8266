@@ -17,5 +17,6 @@ WiFi functionalities.
 15- Wi-Fi connectivity is lost during deep sleep and we have to connect to Wi-Fi after deep sleep and reset wakes up the processing
 unit.
 16- ESP32 has built-in encryption module for cryptographic hardware acceleration. SHA,RSA,AES.
+17- Prefer 115200.
 
 
