@@ -6,7 +6,7 @@
 const char* ssid = "CELBITS";
 const char* password = "celbits@123";
 
-ESP8266WebServer server(80);
+ESP8266WebServer server(80);  // Create a server object
 
 const int led = 13;
 
@@ -37,11 +37,12 @@ void setup(void){
   pinMode(led, OUTPUT);
   digitalWrite(led, 0);
   Serial.begin(115200);
-  WiFi.begin(ssid, password);
-  Serial.println("");
+  WiFi.begin(ssid, password);  // Initializes the WiFi library's network settings and provides the current status. 
+  Serial.println("");    // SSID (Service Set Identifier) is the name of the WiFi network you want to connect to. 
 
   // Wait for connection
-  while (WiFi.status() != WL_CONNECTED) {
+  while (WiFi.status() != WL_CONNECTED) { //     WL_CONNECTED when connected to a network
+    //  WL_IDLE_STATUS when not connected to a network, but powered on 
     delay(500);
     Serial.print(".");
   }
