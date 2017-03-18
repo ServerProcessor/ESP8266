@@ -1,0 +1,8 @@
+1- Allows Arduino boards to connect to the internet.
+2- It can serve either a server acccepting incoming connections or a client making outgoing ones.
+3- The library provides support for WEP and WPA2 personal encryption but not enterprise.
+4- There is a need of SSID broadcast.
+5- WEP = Wired Equivalent Privacy uses a 16 or 32 bit hexadecimal system and is easily cracked.
+6- WPA2 = WPA Plus CCMP and AES.
+7- Arduino communicates with the shield with 11,12,13 using SPI bus ( 50,51,52 ) on mega. Pin 10 : CS ( Note: digital pin 7 should
+not be used as it used as a handshake pin b/w shield and arduino.
