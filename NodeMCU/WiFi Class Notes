@@ -1,0 +1,3 @@
+The WiFi class initializes the ethernet library and network settings.
+
+WiFi.begin(ssid,password) : 
