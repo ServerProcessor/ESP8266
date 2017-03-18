@@ -1,3 +1,58 @@
 The WiFi class initializes the ethernet library and network settings.
 
-WiFi.begin(ssid,password) : 
+1- WiFi.begin(ssid,password) : Initializes the WiFi library's network settings and provides the current status.
+WiFi.begin(ssid,KeyIndex,Key) : WEP encrypted networks can hold upto 4 different keys. This identifies which key you are going to use.
+Key is the hexadecimal string used as a security code for WEP encrypted networks.
+
+- WL_CONNECTED = when connected to a network.
+- WL_IDLE_STATUS = when not connected to a network but powered on.
+These are the returns
+
+2- WiFi.disconnect() : Disconnects the WiFi shield from the current network.
+
+3- WiFi.SSID() : Gets the SSID of the current network. Returns the SSID the WiFi shield is currently connected to.
+
+4- WiFi.scanNetworks() : Scans for available WiFi networks and returns the discovered number. Returns number of discovered networks
+(byte)
+
+5- WiFi.status() : Return the connection status.
+Returns -
+
+    WL_CONNECTED: assigned when connected to a WiFi network;
+    WL_NO_SHIELD: assigned when no WiFi shield is present;
+    WL_IDLE_STATUS: it is a temporary status assigned when WiFi.begin() is called and remains active until the number of attempts expires (resulting in WL_CONNECT_FAILED) or a connection is established (resulting in WL_CONNECTED);
+    WL_NO_SSID_AVAIL: assigned when no SSID are available;
+    WL_SCAN_COMPLETED: assigned when the scan networks is completed;
+    WL_CONNECT_FAILED: assigned when the connection fails for all the attempts;
+    WL_CONNECTION_LOST: assigned when the connection is lost;
+    WL_DISCONNECTED: assigned when disconnected from a network; 
+    
+6- WiFi.macAddress(mac) : Gets the MAC Address of your WiFi shield. mac is a 6 byte array to hold the MAC Address. Returns 6 bytes
+representing MAC Address of the shield.
+
+7- WiFi.BSSID(bssid) : Gets the MAC Address of the router you are connected to. bssid is 6 byte array. 
+
+8- WiFi.RSSI(wifiAccessPoint) : Gets the signal strength of the connection to the router. wifiAccessPoint specifies from which
+network to get the info. Returns "long" RSSSI or Received Signal Strenght in dBm.
+
+9- WiFi.encryptionType(wifiAccessPoint) : Gets the encryption type of the current network. wifiAccessPoint specifies which network to get 
+information from.
+Return - 
+
+byte : value represents the type of encryption.
+
+    TKIP (WPA) = 2
+    WEP = 5
+    CCMP (WPA) = 4
+    NONE = 7
+    AUTO = 8 
+
+10- WiFi.getSocket() : gets the first socket available. Returns int : the first socket available
+
+
+
+
+
+
+
+
