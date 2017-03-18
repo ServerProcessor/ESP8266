@@ -48,11 +48,3 @@ byte : value represents the type of encryption.
     AUTO = 8 
 
 10- WiFi.getSocket() : gets the first socket available. Returns int : the first socket available
-
-
-
-
-
-
-
-
